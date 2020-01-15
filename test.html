@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+  
+
+    <title>Home Page - Cadence Vacations Center</title>
+    <meta name="description" content=""/>
+
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="libs/icofont/icofont.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/daterange/daterangepicker.css" >
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600&display=swap' type='text/css' media='all' />
+    <script>
+        var bookingCore = {
+            url:'http://cvc.vacations',
+            booking_decimals:0,
+            thousand_separator:'.',
+            decimal_separator:',',
+            currency_position:'left',
+            currency_symbol:'$',
+            date_format:'MM/DD/YYYY',
+            map_provider:'gmap',
+            map_gmap_key:'',
+        };
+    </script>
+    <!-- Styles -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154435778-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154435778-1');
+    </script>
+
+        
+    <style id="custom-css">
+    body{
+                                      font-family:;
+                              color:;
+                              font-size:;
+                              line-height:;
+                              font-weight:;
+                        }
+    a,
+    .bravo-news .btn-readmore,
+    .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li:hover > a,
+    .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .field-icon,
+    .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .render,
+    .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .field-detination #dropdown-destination .form-control,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .btn-apply-price-range,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .btn-more-item,
+    .input-number-group i,
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .field-icon,
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .field-detination #dropdown-destination .form-control,
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .render
+    {
+        color:#5191fa
+    }
+    .bravo-pagination ul li.active a, .bravo-pagination ul li.active span
+    {
+        color:#5191fa!important;
+    }
+    .bravo-news .widget_category ul li span,
+    .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .g-button-submit button,
+    .bravo_wrap .bravo_search_tour .bravo_filter .filter-title:before,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-bar,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-handle>i:first-child,
+    .bravo-news .header .cate ul li,
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .g-button-submit button,
+    .bravo_wrap .page-template-content .bravo-list-locations .list-item .destination-item .image .content .desc
+    {
+        background: #5191fa;
+    }
+    .bravo-pagination ul li.active a, .bravo-pagination ul li.active span
+    {
+        border-color:#5191fa!important;
+    }
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from:before, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before,
+    .bravo-reviews .review-form .form-wrapper,
+    .bravo_wrap .bravo_detail_tour .bravo_content .bravo_tour_book
+    {
+        border-top-color:#5191fa;
+    }
+
+    .bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact{
+        border-left-color:#5191fa;
+    }
+
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .field-detination {
+    padding : 0 0 10px 0;    
+}
+
+.bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .form-date-search {
+    padding : 0 0 10px 0;    
+
+}
+
+.bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .g-button-submit {
+    min-height: 62px;
+}
+
+.bravo_wrap .page-template-content .bravo-form-search-tour {
+    padding: 230px 0 !important;
+}
+.bravo_wrap .bravo_header .content .header-left {
+         
+    width: 100% !important; 
+
+}
+.bravo_wrap .bravo_header .content .header-right { 
+         
+    width: 0% !important; 
+
+}
+a.bravo-logo img{
+
+    width: 80px !important; 
+
+}
+
+.bravo_wrap .bravo_topbar {
+
+    height: auto !important;
+}
+</style>
+    <link href="libs/carousel-2/owl.carousel.css" rel="stylesheet">
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5df2121a43be710e1d21c40f/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</head>
+<body class="">
+    <div class="bravo_wrap">
+
+        <style>
+    
+.bravo_wrap .bravo_header {
+    background: #1a2b48;
+    height: 34px;
+}
+
+.bravo_wrap .bravo_topbar {
+    padding: 15px 0;
+    color: #333;
+    padding-left: 10px;
+    
+}
+
+.bravo_wrap .bravo_topbar .content .topbar-right {
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+
+.bravo_wrap .bravo_header .content .header-left .bravo-menu {
+    padding-left: 90px;
+    /* color: #fff; */
+}
+
+.bravo_wrap .bravo_header .content {
+    background: #1a2b48;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 222px;
+    color: #fff;
+}
+
+
+
+
+.bravo_wrap .bravo_topbar{
+
+
+    background-color: #fff;
+}
+
+
+.bravo_wrap .bravo_topbar {
+    padding: 15px 0;
+    color: #333;
+    padding-left: 10px;
+    /* margin-left: 10px; */
+    height: 78px;
+}
+
+
+
+.bravo_wrap .bravo_topbar .content .socials {
+    display: inline-block;
+    /* border-right: 1px solid #374969; */
+}
+
+
+.bravo_wrap .bravo_topbar .content .topbar-items li a {
+    color: #666;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+}
+.bravo_wrap .bravo_header .content .header-left .bravo-menu ul li a {
+    padding: 35px 13px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s;
+}
+
+.bravo_wrap .bravo_topbar .content .topbar-right {
+    font-size: 12px;
+    padding: 10px;
+}
+.bravo_wrap .bravo_header .content .header-left .bravo-menu ul li>.menu-dropdown li a {
+    padding: 15px 0;
+    display: block;
+    font-size: 14px;
+    color: #888;
+}
+
+.bravo_topbar .topbar-left .slogin{
+    display:inline-block;
+    font-weight:bolder
+}
+</style>
+
+<div class="bravo_topbar">
+    <div class="container">
+        <div class="content">
+            <div class="topbar-left">
+
+                    <a href="http://cvc.vacations" class="bravo-logo">
+        <img src="http://cvc.vacations/uploads/0000/1/2019/12/28/final-logo-03-1.png" width="135"  alt="Cadence Vacations Center">
+                                        
+
+
+                </a>
+
+        
+                 <h5  class="slogin">  Your Luxury DMC in Egypt </h5>
+            </div>
+
+            <div>
+                
+
+
+            </div>
+            <div class="topbar-right">
+
+                           <div>
+                
+                                            <div class="st-list socials">
+                                                    <a href="#" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                                                    <a href="#" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                                                    <a href="#" target="_blank">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                                            </div>
+                                
+                                    <ul class="topbar-items">
+                        <li class="hidden-xs hidden-sm"><a href="mailto:info@cvc.vacations" target="">info@cvc.vacations</a>
+                        </li>
+                    </ul>
+                                  <ul class="topbar-items">
+                                            <li class="login-item dropdown">
+                            <a href="#" data-toggle="dropdown" class="login">Hi,  
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu text-left">
+                                <li><a href="http://cvc.vacations/user/profile"><i class="icon ion-md-construct"></i> My profile</a></li>
+
+                                                                    <li class="menu-hr"><a href="http://cvc.vacations/admin"><i class="icon ion-ios-ribbon"></i> Dashboard</a></li>
+                                                                <li class="menu-hr">
+                                    <a  href="#" onclick="event.preventDefault(); document.getElementById('logout-form-topbar').submit();"><i class="fa fa-sign-out"></i> Logout</a>
+                                </li>
+                            </ul>
+                            <form id="logout-form-topbar" action="http://cvc.vacations/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="rpIsegRg9AWQquQ8f0S0UzRjdI51mdPWVAwziRyx">
+                            </form>
+                        </li>
+                                </div>
+              
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="bravo_header">
+    <div class="container">
+        <div class="content">
+            <div class="header-left">
+
+                <div class="bravo-menu">
+                    <ul class="main-menu menu-generated"><li class=""><a  target="" href="/" >Home</a></li><li class="   "><a  target="" href="/page/destinations" >Destinations <i class="fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" "><a  target="" href="http://cvc.vacations/location/cairo" >Cairo</a></li><li class="  "><a  target="" href="http://cvc.vacations/location/luxor" >Luxor</a></li><li class="  "><a  target="" href="http://cvc.vacations/location/aswan-1" >Aswan</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/alexandria-1" >Alexandria</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/sharm-el-sheikh" >Sharm El-Sheikh</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/sahl-hasheesh" >Sahl Hasheesh</a></li></ul></li><li class="    "><a  target="" href="/tour" >Egypt Packages</a></li><li class="  "><a  target="" href="http://cvc.vacations/page/about-us" >About Us</a></li><li class=""><a  target="" href="/contact" >Contact Us</a></li></ul>                </div>
+            </div>
+            <div class="header-right">
+                                <button class="bravo-more-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bravo-menu-mobile">
+        <div class="user-profile">
+            <div class="b-close"><i class="icofont-scroll-left"></i></div>
+            <div class="avatar">
+                                                                                <i class="icofont-user-alt-2"></i>
+                                                </div>
+            <ul>
+                                    <li>
+                        <a href="http://cvc.vacations/user/profile">
+                            <i class="icofont-user-suited"></i> Hi,  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cvc.vacations/user/profile">
+                            <i class="icon ion-md-construct"></i> My profile
+                        </a>
+                    </li>
+                                            <li>
+                            <a href="http://cvc.vacations/admin"><i class="icon ion-ios-ribbon"></i> Dashboard</a>
+                        </li>
+                                        <li>
+                        <a  href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <i class="fa fa-sign-out"></i> Logout
+                        </a>
+                        <form id="logout-form" action="http://cvc.vacations/logout" method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="rpIsegRg9AWQquQ8f0S0UzRjdI51mdPWVAwziRyx">
+                        </form>
+                    </li>
+                            </ul>
+        </div>
+        <div class="g-menu">
+            <ul class="main-menu menu-generated"><li class=""><a  target="" href="/" >Home</a></li><li class="   "><a  target="" href="/page/destinations" >Destinations <i class="fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" "><a  target="" href="http://cvc.vacations/location/cairo" >Cairo</a></li><li class="  "><a  target="" href="http://cvc.vacations/location/luxor" >Luxor</a></li><li class="  "><a  target="" href="http://cvc.vacations/location/aswan-1" >Aswan</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/alexandria-1" >Alexandria</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/sharm-el-sheikh" >Sharm El-Sheikh</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/sahl-hasheesh" >Sahl Hasheesh</a></li></ul></li><li class="    "><a  target="" href="/tour" >Egypt Packages</a></li><li class="  "><a  target="" href="http://cvc.vacations/page/about-us" >About Us</a></li><li class=""><a  target="" href="/contact" >Contact Us</a></li></ul>        </div>
+    </div>
+</div>                    <div class="page-template-content">
+            <div class="bravo-form-search-tour" style="background-image: url('http://cvc.vacations/uploads/0000/1/2019/12/28/33049760203-6745dab7c0-k.jpg') !important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-heading text-center">Love where you&#039;re going</h1>
+                <div class="sub-heading text-center">Book incredible things to do around the world.</div>
+            </div>
+        </div>
+    </div>
+</div><div class="bravo-featured-item">
+        <div class="container">
+            <div class="row">
+                                                        <div class="col-md-4">
+                        <div class="featured-item">
+                            <div class="image">
+                                <img src="" class="img-responsive">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">
+                                    FREE CANCELLATION
+                                </h4>
+                                <div class="desc">Free cancellation on most tours, just in case things don&#039;t go as planned.</div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="col-md-4">
+                        <div class="featured-item">
+                            <div class="image">
+                                <img src="" class="img-responsive">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">
+                                    BEST PRICE GUARANTEE
+                                </h4>
+                                <div class="desc">We price match within 72 hours of order confirmation.</div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="col-md-4">
+                        <div class="featured-item">
+                            <div class="image">
+                                <img src="" class="img-responsive">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">
+                                    Tour Guide System
+                                </h4>
+                                <div class="desc">We&#039;re always here to guide you in your trip.</div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="col-md-4">
+                        <div class="featured-item">
+                            <div class="image">
+                                <img src="" class="img-responsive">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">
+                                    WIFI 24/7
+                                </h4>
+                                <div class="desc">We provide free wifi sim card</div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="col-md-4">
+                        <div class="featured-item">
+                            <div class="image">
+                                <img src="" class="img-responsive">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">
+                                    Guaranteed Departure
+                                </h4>
+                                <div class="desc">Up 2 PAX we grantee to depart any date</div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="col-md-4">
+                        <div class="featured-item">
+                            <div class="image">
+                                <img src="" class="img-responsive">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">
+                                    Customer Service
+                                </h4>
+                                <div class="desc">We&#039;re always here to help, before, during, and after your trip</div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="bravo-list-locations">
+        <div class="title">
+            Top Destinations
+        </div>
+        <div class="list-item">
+            <div class="row">
+                                    <div class="col-lg-8">
+                        <div class="destination-item ">
+    <a href="http://cvc.vacations/hotel?location_id=20">
+        <div class="image"  style="background: url('')"  >
+            <div class="effect"></div>
+            <div class="content">
+                <h4 class="title">Cairo</h4>
+                <div class="desc">8 Hotels</div>
+            </div>
+        </div>
+    </a>
+</div>                    </div>
+                                    <div class="col-lg-4">
+                        <div class="destination-item ">
+    <a href="http://cvc.vacations/hotel?location_id=19">
+        <div class="image"  style="background: url(http://cvc.vacations/uploads/0000/1/2019/12/28/luxorr-600.jpg)"  >
+            <div class="effect"></div>
+            <div class="content">
+                <h4 class="title">Luxor</h4>
+                <div class="desc">9 Hotels</div>
+            </div>
+        </div>
+    </a>
+</div>                    </div>
+                                    <div class="col-lg-4">
+                        <div class="destination-item ">
+    <a href="http://cvc.vacations/hotel?location_id=18">
+        <div class="image"  style="background: url(http://cvc.vacations/uploads/0000/1/2019/12/28/anakato-1-600.jpg)"  >
+            <div class="effect"></div>
+            <div class="content">
+                <h4 class="title">Aswan</h4>
+                <div class="desc">2 Hotels</div>
+            </div>
+        </div>
+    </a>
+</div>                    </div>
+                                    <div class="col-lg-4">
+                        <div class="destination-item ">
+    <a href="http://cvc.vacations/hotel?location_id=17">
+        <div class="image"  style="background: url(http://cvc.vacations/uploads/0000/1/2019/12/28/alexandria-2-600.jpg)"  >
+            <div class="effect"></div>
+            <div class="content">
+                <h4 class="title">Alexandria</h4>
+                <div class="desc">2 Hotels</div>
+            </div>
+        </div>
+    </a>
+</div>                    </div>
+                                    <div class="col-lg-4">
+                        <div class="destination-item ">
+    <a href="http://cvc.vacations/hotel?location_id=16">
+        <div class="image"  style="background: url(http://cvc.vacations/uploads/0000/1/2019/12/28/sharm-l-sheikh-600.jpg)"  >
+            <div class="effect"></div>
+            <div class="content">
+                <h4 class="title">Sharm El-Sheikh</h4>
+                <div class="desc">3 Hotels</div>
+            </div>
+        </div>
+    </a>
+</div>                    </div>
+                                    <div class="col-lg-4">
+                        <div class="destination-item ">
+    <a href="http://cvc.vacations/hotel?location_id=15">
+        <div class="image"  style="background: url(http://cvc.vacations/uploads/0000/1/2019/12/28/sahl-hasheesh4-600.jpg)"  >
+            <div class="effect"></div>
+            <div class="content">
+                <h4 class="title">Sahl Hasheesh</h4>
+                <div class="desc">1 Hotel</div>
+            </div>
+        </div>
+    </a>
+</div>                    </div>
+                            </div>
+        </div>
+    </div>
+</div><div class="container">
+        <div class="bravo-list-tour">
+            <div class="title">
+                Egypt Packages
+            </div>
+            <div class="list-item">
+                                                    <div class="owl-carousel">
+                                                    <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/tour/11-day-egypt-complete-tour">
+                    </a>
+    </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/tour/11-day-egypt-complete-tour">
+            <h4>
+                11 Day Egypt Complete Tour
+            </h4>
+        </a>
+        
+
+    </div>
+
+    <div class="info">
+        <div class="duration">
+            <i class="icofont-wall-clock"></i>
+             Day
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <i class="icofont-flash"></i>
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">$0</span>
+            </div>
+        </div>
+    </div>
+</div>
+                                                    <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/tour/7-day-standard-egypt-tour">
+                    </a>
+    </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/tour/7-day-standard-egypt-tour">
+            <h4>
+                7 Day Standard Egypt Tour
+            </h4>
+        </a>
+        
+
+    </div>
+
+    <div class="info">
+        <div class="duration">
+            <i class="icofont-wall-clock"></i>
+             Day
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <i class="icofont-flash"></i>
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">$0</span>
+            </div>
+        </div>
+    </div>
+</div>
+                                                    <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/tour/14-day-egypt-grand-tour">
+                                                <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/demo/tour/banner-detail/banner-tour-16.jpg  alt='14 Day Egypt Grand Tour'>
+                                    </a>
+    </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/tour/14-day-egypt-grand-tour">
+            <h4>
+                14 Day Egypt Grand Tour
+            </h4>
+        </a>
+        6 nights Cairo <br>
+7 nights Nile Cruise <br>
+<b>Small Group Tours : </b>2-12<br>
+<b>Start/End : </b> Cairo/Cairo <br>
+<b>Guaranteed Departure Up 2 Pax</b>
+
+    </div>
+
+    <div class="info">
+        <div class="duration">
+            <i class="icofont-wall-clock"></i>
+             Day
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <i class="icofont-flash"></i>
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">$0</span>
+            </div>
+        </div>
+    </div>
+</div>
+                                                    <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/tour/9-day-standard-with-red-sea-egypt-tour">
+                                                <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/demo/tour/banner-detail/banner-tour-16.jpg  alt='9 Day Standard with Red Sea Egypt Tour'>
+                                    </a>
+    </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/tour/9-day-standard-with-red-sea-egypt-tour">
+            <h4>
+                9 Day Standard with Red Sea Egypt Tour
+            </h4>
+        </a>
+        2 nights Cairo
+<br>
+3 nights Nile Cruise
+<br>
+3 nights Red Sea
+<b>Small Group Tours : </b>2-12
+<br>
+
+<b>Start/End :</b> Cairo/Cairo
+<br>
+<b>Guaranteed Departure Up 2 Pax</b>
+<br>
+<br>
+
+    </div>
+
+    <div class="info">
+        <div class="duration">
+            <i class="icofont-wall-clock"></i>
+             Day
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <i class="icofont-flash"></i>
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">$0</span>
+            </div>
+        </div>
+    </div>
+</div>
+                                                    <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/tour/11-day-inclusive-egypt-tour">
+                                                <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/demo/tour/banner-detail/banner-tour-7.jpg  alt='11 Day Inclusive Egypt Tour'>
+                                    </a>
+    </div>
+    <div class="location">
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/tour/11-day-inclusive-egypt-tour">
+            <h4>
+                11 Day Inclusive Egypt Tour
+            </h4>
+        </a>
+        6 nights Cairo
+<br>
+3 nights Nile Cruise
+<br>
+1 night Luxor 
+<br>
+<b>Small Group Tour</b>(2-12)
+<br>
+<b>Start/End :</b> Cairo/Cairo
+<br>
+<b>Guaranteed Departure Up 2 Pax</b>
+<br>
+<br>
+
+    </div>
+
+    <div class="info">
+        <div class="duration">
+            <i class="icofont-wall-clock"></i>
+             Day
+        </div>
+        <div class="g-price">
+            <div class="prefix">
+                <i class="icofont-flash"></i>
+                <span class="fr_text">from</span>
+            </div>
+            <div class="price">
+                <span class="onsale"></span>
+                <span class="text-price">$0</span>
+            </div>
+        </div>
+    </div>
+</div>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="bravo-list-tour">
+        <div class="title">
+            Hotel
+        </div>
+        <div class="list-item">
+                                        <div class="owl-carousel">
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/four-season-nile-plaza-cairo">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/1336750-four-seasons-nile-plaza-cairo-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/four-season-nile-plaza-cairo">
+            Four Season at Cairo Nile Plaza
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/four-season-first-residence">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/59294-1201041931005534815-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/four-season-first-residence">
+            Four Season First Residence
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/sofitel-winter-palace-luxor">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/sof-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/sofitel-winter-palace-luxor">
+            Sofitel Winter Palace Luxor
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/sonesta-st-goerge-hotel">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/sonestastgeorgeluxor-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/sonesta-st-goerge-hotel">
+            Sonesta St. Goerge crusise
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/jw-marriott-hotel-cairo">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/caijw.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/jw-marriott-hotel-cairo">
+            JW Marriott Hotel Cairo
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/hilton-cairo-zamalek-residence">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/hilton-zmalek-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/hilton-cairo-zamalek-residence">
+            Hilton Cairo Zamalek Residence
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/sofitel-legend-old-cataract-aswan">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/old2-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Aswan
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/sofitel-legend-old-cataract-aswan">
+            Sofitel Legend Old Cataract Aswan
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/kempinski-nile-hotel-cairo">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/kempiniski-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/kempinski-nile-hotel-cairo">
+            Kempinski Nile Hotel Cairo
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/le-meridien-pyramids-hotel-spa-cairo">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/le-meridien-pyramids-1-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/le-meridien-pyramids-hotel-spa-cairo">
+            Le Méridien Pyramids Hotel &amp; Spa Cairo
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/movenpick-resort-aswan">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/movinpk-2.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Aswan
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/movenpick-resort-aswan">
+            Mövenpick Resort Aswan
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/the-nile-ritz-carlton">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/33nr-nileritz-1-1024x480-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/the-nile-ritz-carlton">
+            The Nile Ritz-Carlton
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/four-seasons-resort-sharm-el-sheikh">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/four-5.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Sharm El-Sheikh
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/four-seasons-resort-sharm-el-sheikh">
+            Four Seasons Resort Sharm El Sheikh
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/marriott-mena-house">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/mena-house-5-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/marriott-mena-house">
+            Marriott Mena House
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/oberoi">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/oberoi-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Sahl Hasheesh
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/oberoi">
+            Oberoi Beach Resort Sahl Hasheesh
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/rixos-sharm-el-sheikh-hotel">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/rixos-6.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Sharm El-Sheikh
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/rixos-sharm-el-sheikh-hotel">
+            Rixos Sharm El Sheikh Hotel
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/sofitel-alexandria-cecil-hotel">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/sofitel-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Alexandria
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/sofitel-alexandria-cecil-hotel">
+            Sofitel Alexandria Cecil Hotel
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/four-seasons-hotel-alexandria">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/fourseasonalex-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Alexandria
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/four-seasons-hotel-alexandria">
+            Four Seasons Hotel Alexandria
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/the-oberoi-zahra-nile-cruiser">
+            
+            
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/the-oberoi-zahra-nile-cruiser">
+            The Oberoi Zahra Luxury Nile Cruise
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/the-oberoi-philae-nile-cruiser">
+            
+            
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/the-oberoi-philae-nile-cruiser">
+            The Oberoi Philae Nile Cruise
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/mayfair-nile-cruise">
+            
+            
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/mayfair-nile-cruise">
+            MayFair Nile Cruise
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/sonesta-st-goerge-hotel-1">
+            
+            
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/sonesta-st-goerge-hotel-1">
+            Sonesta St. Goerge Hotel
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/mayflower-nile-crusise">
+            
+            
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/mayflower-nile-crusise">
+            MayFlower Nile Crusise
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/ms-esplanade-cruises">
+            
+            
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/ms-esplanade-cruises">
+            M/S Esplanade Nile cruises
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/cleopatra-luxury-hotel">
+            
+            
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Sharm El-Sheikh
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/cleopatra-luxury-hotel">
+            Cleopatra Luxury Hotel
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                            <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  href="http://cvc.vacations/hotel/cruise">
+            
+            
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Luxor
+            </div>
+    <div class="item-title">
+        <a  href="http://cvc.vacations/hotel/cruise">
+            Nile cruise
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                                    </div>
+                    </div>
+    </div>
+</div>
+        </div>
+
+        <div class="container " style="padding-top: 40px;padding-bottom: 40px;">
+            <div class="blog-content">
+                
+            </div>
+        </div>
+            <div class="bravo_footer">
+    <div class="mailchimp">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <div class="col-xs-12  col-md-7 col-lg-6">
+                            <div class="media ">
+                                <div class="media-left hidden-xs">
+                                    <i class="icofont-hill"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Get Updates &amp; More</h4>
+                                    <p>Thoughtful thoughts to your inbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-5 col-lg-6">
+                            <form action="http://cvc.vacations/newsletter/subscribe" class="subcribe-form bravo-subscribe-form bravo-form">
+                                <input type="hidden" name="_token" value="rpIsegRg9AWQquQ8f0S0UzRjdI51mdPWVAwziRyx">                                <div class="form-group">
+                                    <input type="text" name="email" class="form-control email-input" placeholder="Your Email">
+                                    <button type="submit" class="btn-submit">Subscribe
+                                        <i class="fa fa-spinner fa-pulse fa-fw"></i>
+                                    </button>
+                                </div>
+                                <div class="form-mess"></div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+                                                                                <div class="col-lg-4 col-md-6">
+                            <div class="nav-footer">
+                                <div class="title">
+                                    NEED HELP?
+                                </div>
+                                <div class="context">
+                                    <div class="contact">
+        <div class="c-title">
+            Call Us
+        </div>
+        <div class="sub">
+            + 02 012 21 23 25 04
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Email for Us
+        </div>
+        <div class="sub">
+            info@cvc.vacations
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Follow Us
+        </div>
+        <div class="sub">
+            <a href="#">
+                <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/12/ico_facebook_footer.png">
+            </a>
+            <a href="#">
+                <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/12/ico_twitter_footer.png">
+            </a>
+            <a href="#">
+                <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/12/ico_instagram_footer.png">
+            </a>
+        </div>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-lg-4 col-md-6">
+                            <div class="nav-footer">
+                                <div class="title">
+                                    Services
+                                </div>
+                                <div class="context">
+                                    <div class="contact">
+        <div class="c-title">
+            Call Us
+        </div>
+        <div class="sub">
+            + 02 22 68 24 28
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Skype
+        </div>
+        <div class="sub">
+            Egyptws
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Whats App
+        </div>
+        <div class="sub">
+           + 02 012 21 23 25 04
+        </div>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-lg-4 col-md-6">
+                            <div class="nav-footer">
+                                <div class="title">
+                                    SUPPORT
+                                </div>
+                                <div class="context">
+                                    <ul>
+    
+    <li><a href="https://cvc.vacations/">Home</a></li>
+    <li><a href="#">Destinations</a></li>
+    <li><a href="https://cvc.vacations/tour">Egypt Packages</a></li>
+<li><a href="https://cvc.vacations/page/about-us">About Us</a></li>
+    <li><a href="https://cvc.vacations/contact">Contact Us</a></li>
+    <li><a href="https://cvc.vacations/news">Blog</a></li>
+</ul>
+                                </div>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container context">
+            <div class="row">
+                <div class="col-md-12">
+                    <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Copyright &copy; 2019 by Tech Center</p>
+</body>
+</html>
+                    <div class="f-visa">
+                        <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Cadence Vacations Center</p>
+</body>
+</html>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="libs/lazy-load/intersection-observer.js"></script>
+<script async src="libs/lazy-load/lazyload.min.js"></script>
+<script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {
+        elements_selector: ".lazy",
+        // ... more custom settings?
+    };
+
+    // Listen to the initialization event and get the instance of LazyLoad
+    window.addEventListener('LazyLoad::Initialized', function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+    }, false);
+
+
+</script>
+<script src="libs/jquery-3.3.1.min.js"></script>
+<script src="libs/vue/vue.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="module/media/js/browser.js"></script>
+<script src="libs/carousel-2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="libs/daterange/moment.min.js"></script>
+<script type="text/javascript" src="libs/daterange/daterangepicker.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/home.js"></script>
+
+    </div>
+</body>
+</html>
