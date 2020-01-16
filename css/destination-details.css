@@ -1,0 +1,32 @@
+.content h3{
+    margin-top: 50px ;
+    color: #666;
+}
+.content p:last-child {
+    margin-bottom: 80px;
+}
+.bravo_wrap .bravo_search_tour .bravo-list-item .list-item .item-tour {
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    overflow: hidden;
+    /* padding-bottom: 15px; */
+    position: relative;
+    margin-bottom: 0px;
+    
+}
+.bravo_wrap .bravo_search_tour .bravo-list-item .list-item .item-tour .thumb-image {
+    overflow: hidden;
+    height: 170px;
+    background: #ccc;
+}
+.bravo_wrap .bravo_search_tour .bravo-list-item .list-item .item-tour .location {
+    font-size: 13px;
+    color: #5e6d77;
+    padding: 15px 15px 10px;
+}
+.bravo_wrap .bravo_search_tour .bravo-list-item .list-item .item-tour .item-title {
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 45px;
+}
