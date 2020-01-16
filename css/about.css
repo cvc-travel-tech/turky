@@ -1,0 +1,20 @@
+.blog-content {
+    margin-top: 80px;
+}
+.blog-content h4{
+    margin: 10px;
+    font-size: 18px;
+    color: #777;
+} 
+.blog-content p{
+    margin: 10px;
+    font-size: 14px;
+    color: #999;
+    margin-left: 40px;
+}
+.blog-content strong{
+    margin: 10px;
+    font-size: 16px;
+    color: #888;
+} 
+
