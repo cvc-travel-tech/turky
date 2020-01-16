@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title> Cadence Vacations Center</title>
+    <meta name="description" content=""/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="libs/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="libs/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="libs/icofont/icofont.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/daterange/daterangepicker.css" >
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600&display=swap' type='text/css' media='all' />
+    <script>
+        var bookingCore = {
+            url:'http://cvc.vacations',
+            booking_decimals:0,
+            thousand_separator:'.',
+            decimal_separator:',',
+            currency_position:'left',
+            currency_symbol:'$',
+            date_format:'MM/DD/YYYY',
+            map_provider:'gmap',
+            map_gmap_key:'',
+        };
+    </script>
+    <!-- Styles -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154435778-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154435778-1');
+    </script>
+
+        <link href="css/tour.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/ion_rangeslider/css/ion.rangeSlider.min.css"/>
+    
+    <style id="custom-css">
+    body{
+                                      font-family:;
+                              color:;
+                              font-size:;
+                              line-height:;
+                              font-weight:;
+                        }
+    a,
+    .bravo-news .btn-readmore,
+    .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li:hover > a,
+    .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .field-icon,
+    .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .render,
+    .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .field-detination #dropdown-destination .form-control,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .btn-apply-price-range,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .btn-more-item,
+    .input-number-group i,
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .field-icon,
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .field-detination #dropdown-destination .form-control,
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .render
+    {
+        color:#5191fa
+    }
+    .bravo-pagination ul li.active a, .bravo-pagination ul li.active span
+    {
+        color:#5191fa!important;
+    }
+    .bravo-news .widget_category ul li span,
+    .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .g-button-submit button,
+    .bravo_wrap .bravo_search_tour .bravo_filter .filter-title:before,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-bar,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single,
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-handle>i:first-child,
+    .bravo-news .header .cate ul li,
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .g-button-submit button,
+    .bravo_wrap .page-template-content .bravo-list-locations .list-item .destination-item .image .content .desc
+    {
+        background: #5191fa;
+    }
+    .bravo-pagination ul li.active a, .bravo-pagination ul li.active span
+    {
+        border-color:#5191fa!important;
+    }
+    .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from:before, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before,
+    .bravo-reviews .review-form .form-wrapper,
+    .bravo_wrap .bravo_detail_tour .bravo_content .bravo_tour_book
+    {
+        border-top-color:#5191fa;
+    }
+
+    .bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact{
+        border-left-color:#5191fa;
+    }
+
+    .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .field-detination {
+    padding : 0 0 10px 0;    
+}
+
+.bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .form-date-search {
+    padding : 0 0 10px 0;    
+
+}
+
+.bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .g-button-submit {
+    min-height: 62px;
+}
+
+.bravo_wrap .page-template-content .bravo-form-search-tour {
+    padding: 230px 0 !important;
+}
+.bravo_wrap .bravo_header .content .header-left {
+         
+    width: 100% !important; 
+
+}
+.bravo_wrap .bravo_header .content .header-right { 
+         
+    width: 0% !important; 
+
+}
+a.bravo-logo img{
+
+    width: 80px !important; 
+
+}
+
+.bravo_wrap .bravo_topbar {
+
+    height: auto !important;
+}
+</style>
+    <link href="libs/carousel-2/owl.carousel.css" rel="stylesheet">
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5df2121a43be710e1d21c40f/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</head>
+<body class="">
+    <div class="bravo_wrap">
+
+        <style>
+    
+.bravo_wrap .bravo_header {
+    background: #1a2b48;
+    height: 34px;
+}
+
+.bravo_wrap .bravo_topbar {
+    padding: 15px 0;
+    color: #333;
+    padding-left: 10px;
+    
+}
+
+.bravo_wrap .bravo_topbar .content .topbar-right {
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+
+.bravo_wrap .bravo_header .content .header-left .bravo-menu {
+    padding-left: 90px;
+    /* color: #fff; */
+}
+
+.bravo_wrap .bravo_header .content {
+    background: #1a2b48;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 222px;
+    color: #fff;
+}
+
+
+
+
+.bravo_wrap .bravo_topbar{
+
+
+    background-color: #fff;
+}
+
+
+.bravo_wrap .bravo_topbar {
+    padding: 15px 0;
+    color: #333;
+    padding-left: 10px;
+    /* margin-left: 10px; */
+    height: 78px;
+}
+
+
+
+.bravo_wrap .bravo_topbar .content .socials {
+    display: inline-block;
+    /* border-right: 1px solid #374969; */
+}
+
+
+.bravo_wrap .bravo_topbar .content .topbar-items li a {
+    color: #666;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+}
+.bravo_wrap .bravo_header .content .header-left .bravo-menu ul li a {
+    padding: 35px 13px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s;
+}
+
+.bravo_wrap .bravo_topbar .content .topbar-right {
+    font-size: 12px;
+    padding: 10px;
+}
+.bravo_wrap .bravo_header .content .header-left .bravo-menu ul li>.menu-dropdown li a {
+    padding: 15px 0;
+    display: block;
+    font-size: 14px;
+    color: #888;
+}
+
+.bravo_topbar .topbar-left .slogin{
+    display:inline-block;
+    font-weight:bolder
+}
+</style>
+
+<div class="bravo_topbar">
+    <div class="container">
+        <div class="content">
+            <div class="topbar-left">
+
+                                <a href="http://cvc.vacations" class="bravo-logo">
+                                                                    <img src="http://cvc.vacations/uploads/0000/1/2019/12/28/final-logo-03-1.png" width="135"  alt="Cadence Vacations Center">
+                                        
+
+
+                </a>
+
+        
+                 <h5  class="slogin">  Your Luxury DMC in Egypt </h5>
+            </div>
+
+            <div>
+                
+
+
+            </div>
+            <div class="topbar-right">
+
+                           <div>
+                
+                                            <div class="st-list socials">
+                                                    <a href="#" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                                                    <a href="#" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                                                    <a href="#" target="_blank">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                                            </div>
+                                
+                                    <ul class="topbar-items">
+                        <li class="hidden-xs hidden-sm"><a href="mailto:info@cvc.vacations" target="">info@cvc.vacations</a>
+                        </li>
+                    </ul>
+                                  <ul class="topbar-items">
+                                            <li class="login-item dropdown">
+                            <a href="#" data-toggle="dropdown" class="login">Hi,  
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu text-left">
+                                <li><a href="http://cvc.vacations/user/profile"><i class="icon ion-md-construct"></i> My profile</a></li>
+
+                                                                    <li class="menu-hr"><a href="http://cvc.vacations/admin"><i class="icon ion-ios-ribbon"></i> Dashboard</a></li>
+                                                                <li class="menu-hr">
+                                    <a  href="#" onclick="event.preventDefault(); document.getElementById('logout-form-topbar').submit();"><i class="fa fa-sign-out"></i> Logout</a>
+                                </li>
+                            </ul>
+                            <form id="logout-form-topbar" action="http://cvc.vacations/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="rpIsegRg9AWQquQ8f0S0UzRjdI51mdPWVAwziRyx">
+                            </form>
+                        </li>
+                                </div>
+              
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="bravo_header">
+    <div class="container">
+        <div class="content">
+            <div class="header-left">
+
+                <div class="bravo-menu">
+                    <ul class="main-menu menu-generated"><li class=""><a  target="" href="/" >Home</a></li><li class="   "><a  target="" href="/page/destinations" >Destinations <i class="fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" "><a  target="" href="http://cvc.vacations/location/cairo" >Cairo</a></li><li class="  "><a  target="" href="http://cvc.vacations/location/luxor" >Luxor</a></li><li class="  "><a  target="" href="http://cvc.vacations/location/aswan-1" >Aswan</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/alexandria-1" >Alexandria</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/sharm-el-sheikh" >Sharm El-Sheikh</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/sahl-hasheesh" >Sahl Hasheesh</a></li></ul></li><li class="    "><a  target="" href="/tour" >Egypt Packages</a></li><li class="  "><a  target="" href="http://cvc.vacations/page/about-us" >About Us</a></li><li class=""><a  target="" href="/contact" >Contact Us</a></li></ul>                </div>
+            </div>
+            <div class="header-right">
+                                <button class="bravo-more-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bravo-menu-mobile">
+        <div class="user-profile">
+            <div class="b-close"><i class="icofont-scroll-left"></i></div>
+            <div class="avatar">
+                                                                                <i class="icofont-user-alt-2"></i>
+                                                </div>
+            <ul>
+                                    <li>
+                        <a href="http://cvc.vacations/user/profile">
+                            <i class="icofont-user-suited"></i> Hi,  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cvc.vacations/user/profile">
+                            <i class="icon ion-md-construct"></i> My profile
+                        </a>
+                    </li>
+                                            <li>
+                            <a href="http://cvc.vacations/admin"><i class="icon ion-ios-ribbon"></i> Dashboard</a>
+                        </li>
+                                        <li>
+                        <a  href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <i class="fa fa-sign-out"></i> Logout
+                        </a>
+                        <form id="logout-form" action="http://cvc.vacations/logout" method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="rpIsegRg9AWQquQ8f0S0UzRjdI51mdPWVAwziRyx">
+                        </form>
+                    </li>
+                            </ul>
+        </div>
+        <div class="g-menu">
+            <ul class="main-menu menu-generated"><li class=""><a  target="" href="/" >Home</a></li><li class="   "><a  target="" href="/page/destinations" >Destinations <i class="fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" "><a  target="" href="http://cvc.vacations/location/cairo" >Cairo</a></li><li class="  "><a  target="" href="http://cvc.vacations/location/luxor" >Luxor</a></li><li class="  "><a  target="" href="http://cvc.vacations/location/aswan-1" >Aswan</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/alexandria-1" >Alexandria</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/sharm-el-sheikh" >Sharm El-Sheikh</a></li><li class=" "><a  target="" href="http://cvc.vacations/location/sahl-hasheesh" >Sahl Hasheesh</a></li></ul></li><li class="    "><a  target="" href="/tour" >Egypt Packages</a></li><li class="  "><a  target="" href="http://cvc.vacations/page/about-us" >About Us</a></li><li class=""><a  target="" href="/contact" >Contact Us</a></li></ul>        </div>
+    </div>
+</div>            <div class="bravo_search_tour">
+        <div class="bravo_banner"  style="background-image: url(http://cvc.vacations/uploads/0000/1/2019/12/28/cairo.jpg);padding: 212px;"  >
+            <div class="container">
+                <h1>
+                    
+                </h1>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h1>Cairo</h1>
+            <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">Cairo or <em>Al-Qahira </em>(the victorious) city in the Arabic language and 'the city of a thousand minarets' is the capital of the charming Egypt.<span style="mso-spacerun: yes;">&nbsp; </span>It is one of the largest cities in Africa and the Middle East.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">Cairo's location on the eastern shore of the Nile River creates its unique magic. In addition, it has an extraordinary history throughout the Ancient Egyptian era, the Islamic and the Coptic age, the old and modern history.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><img src="../../../../uploads/0000/1/2019/12/11/egypt-2109x1406-150.jpg" alt="" width="150" height="100" />&nbsp; &nbsp;<strong><span style="font-size: 14.0pt; line-height: 150%;">Pyramids of Giza</span></strong></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><span style="mso-bidi-language: AR-EG;">Located on Giza plateau are the three iconic pyramids of Egypt belonging to the kings of the fourth dynasty. Starting with</span> the one and only standing monument among the seven wonders of the ancient world, <strong>The Great Pyramid of <em>Khufu</em></strong>.<span style="mso-spacerun: yes;">&nbsp; </span>Its size along with the<span style="mso-bidi-language: AR-EG;"> interior design and the so called "Grand Gallery" are the main reasons why the Great pyramid was selected to be the utmost man-made buildin</span>g all over the world.</p>
+<p class="MsoNormal" style="text-align: left; line-height: 150%; direction: ltr; unicode-bidi: embed;"><span style="mso-bidi-language: AR-EG;">The second chief monument on the Giza plateau is <strong>The Pyramid of <em>Kharfa</em></strong>.<span style="mso-spacerun: yes;">&nbsp; </span>It is the second largest of the Ancient Egyptian pyramids known for the well preserved pyramid complex.<span style="mso-spacerun: yes;">&nbsp; </span>The so called valley temple and the Gre</span>at Sphinx are considered part of Khafra's pyramid complex.</p>
+<p class="MsoNormal" style="text-align: left; line-height: 150%; direction: ltr; unicode-bidi: embed;"><span style="mso-bidi-language: AR-EG;">The third and smallest building in the plateau is <strong>T</strong></span><strong>he Pyramid of <em>Menkawra</em></strong><em>.&nbsp; </em>It served as the burial place of king <em>Menkawra</em> of the fourth dynasty.</p>
+<p class="MsoNormal" style="text-align: left; line-height: 150%; direction: ltr; unicode-bidi: embed;"><img src="../../../../uploads/0000/1/2019/12/12/sphinx-150.jpg" alt="" width="150" height="91" />&nbsp;&nbsp;<strong style="text-align: justify;"><span style="font-size: 14.0pt; line-height: 150%;">The Great Sphinx</span></strong></p>
+<p class="MsoNormal" style="line-height: 150%; direction: ltr; unicode-bidi: embed;">Cut from one huge piece of limestone, the statue of the great sphinx is considered one of the largest and oldest statues in the world.&nbsp; The 20 meter- tall structure is a mythical creature taking the body of a lion and the face of a human; in this case it is highly recommended it belongs to King <em>Khafre</em>.&nbsp; On one hand, the great sphinx's function is said to guard the area of the three pyramids, while on the other hand it is a symbolization of power, strength and wisdom of the Egyptian king.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><strong><span style="font-size: 14.0pt; line-height: 150%;"><img src="../../../../uploads/0000/1/2019/12/11/memphis-150.jpg" alt="" width="150" height="108" />&nbsp; &nbsp;Memphis</span></strong></p>
+<p class="MsoNormal" style="text-align: left; line-height: 150%; direction: ltr; unicode-bidi: embed;">It is situated to the south west of Giza pyramids, and is considered the 1<sup>st</sup> capital of Ancient Egypt.<span style="mso-spacerun: yes;">&nbsp; </span>The ancient city hosts a number of breathtaking monuments such as: the colossi of Ramases II, the alabaster sphinx and other statues.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><strong><span style="font-size: 14.0pt; line-height: 150%;">&nbsp; <img src="../../../../uploads/0000/1/2019/12/11/saqqara-150.jpg" alt="" width="150" height="113" />&nbsp; &nbsp;The Pyramid Complex of Sakkara </span></strong></p>
+<p class="MsoNormal" style="text-align: left; line-height: 150%; direction: ltr; unicode-bidi: embed;">Built by King Djoser of Old Kingdom, the step pyramid of Sakkara is the earliest colossal stone building in Ancient Egypt. Despite the fact that Sakkara isn't famous as the pyramids of Giza, but it is so important to witness the evolution of pyramids construction throughout the history.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><strong><span style="font-size: 14.0pt; line-height: 150%;"><img src="../../../../uploads/0000/1/2019/12/11/khan-l-khaleli-150.jpg" alt="" width="150" height="98" />&nbsp; &nbsp;Khan El-Khalili</span></strong></p>
+<p class="MsoNormal" style="text-align: left; line-height: 150%; direction: ltr; unicode-bidi: embed;">It is a famous bazaar in the historic center of Cairo.<span style="mso-spacerun: yes;">&nbsp; </span>The ancient market is as old as the 14th century, and is characterized by the manufacture of a unique handicrafts and souvenirs made by the Egyptian talented artisans.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><strong><span style="font-size: 14.0pt; line-height: 150%;"><img src="../../../../uploads/0000/1/2019/12/11/1-citadel-150.jpg" alt="" width="150" height="100" />&nbsp; &nbsp;The Citadel of Saladin</span></strong></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">It is constructed by the legendary army leader Saladin in the 13<sup>th</sup> century. The citadel area encompasses several museums and monuments from different eras such as: the great alabaster Mosque of Mohamed Ali, the Royal Carriage Museum and Al-Gawhara Palace Museum.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><strong><span style="font-size: 14.0pt; line-height: 150%;"><img src="../../../../uploads/0000/1/2019/12/11/5-moez-1-150.jpg" alt="" width="150" height="113" />&nbsp; &nbsp; Old Cairo</span></strong></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">Also known as Coptic Cairo or the Center of Religions is situated at the location of ancient Babylon dating back to the 6th century BC. The area is known to be the shelter place of the Holy Family during their flight to Egypt seeking refugee from the Roman king Herod who wanted to kill Jesus the baby.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">Nowadays the area encompasses number of Coptic Religious buildings which are: The Hanging Church, the Greek Church of St. George, the cemetery of the Greeks, the Monastery of St. George, the Wedding Hall of St. George, the Church of Abu Serga, the Church of St. Barbara, the Tomb of Ibrahim Al-Gohary, the Church of the Virgin -Qasriyet Al-Rayhan-, and the Coptic Museum.&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">In addition to the Coptic monuments, there are the synagogue of Ben Ezra and the Mosque of Amr Ibn Al-Aas very near to the complex.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><img src="../../../../uploads/0000/1/2019/12/12/amr-ibn-el-aas-mosque-150.jpg" alt="" width="150" height="98" />&nbsp; &nbsp;<strong><span style="font-size: 14.0pt; line-height: 150%;">Mosque of Amr Ibn Al-Aas&nbsp;</span></strong></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">The Mosque was founded in 642 AD by the Arab commander who introduced Islam to Egypt, Amr Ibn Al-Aas.&nbsp; The mosque acted as the center of his newly founded Egyptian capital, Al-Fustat.&nbsp; It is located near to the Coptic complex in the heart of Old Cairo.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">Despite the fact that most of its original structure has been renovated, the historical significance of the building as the first mosque on the continent of Africa still fascinates lots of tourists from all over the world!</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><strong><span style="font-size: 14.0pt; line-height: 150%;"><img src="../../../../uploads/0000/1/2019/12/11/egyptian-museum-150.jpg" alt="" width="150" height="84" />&nbsp; &nbsp;</span></strong><strong><span style="font-size: 14.0pt; line-height: 150%;">Grand Egyptian Museum (GEM)</span></strong></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">Located approximately two kilometers from Giza pyramids, the GEM is a planned museum of the most precious ancient Egyptian artefacts.&nbsp; It is still under construction and is scheduled to open in 2020.&nbsp; The museum is described as the largest archaeological museum in the world!</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">The estimated floor area is 480,000 square meters.&nbsp; It is planned that the museum will include the latest interpretation technologies comprising virtual reality.&nbsp; It will embrace conference center, children's museum, training center and workshops similar to the Ancient Egyptian places.&nbsp; Stay Tuned for the opening ceremony!</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><img src="../../../../uploads/0000/1/2019/12/12/manialpalace-150.jpg" alt="" width="150" height="90" />&nbsp; &nbsp;<strong><span style="font-size: 14.0pt; line-height: 150%;">Manial Palace and Museum</span></strong></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;Built by Prince Mohamed Ali between 1901 and 1929 on Rhoda Island, the palace is located in El-Manial district to the south of Cairo.&nbsp; Despite the fact that El-Manial palace is not as famous as many sightseeing attractions in Cairo, yet it is considered one of the most fascinating historic house museums in Egypt.&nbsp; The interior design combines several Islamic architectural decorations vary between Ottoman, Persian, Moorish and Fatimid styles.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">Beside the Reception Saray, Accommodation Saray, Throne Saray and The Golden Hall, the palace area contains historical gardens, forested nature park and hunting museum.&nbsp; To conclude, the palace is considered a master piece of art and it is definitely worth the visit!</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><img src="../../../../uploads/0000/1/2019/12/12/wadi-degla-protectorate-150.jpg" alt="" width="150" height="66" />&nbsp; &nbsp;<strong><span style="font-size: 14.0pt; line-height: 150%;">Wadi Degla Protectorate</span></strong></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">In 1999, Wadi Degla was announced to be a desert land protected area by the Egyptian Environmental Affairs Agency.&nbsp; It covers an area of about 60 kilometers and situated just 10 kilometers away from Cairo.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">The protectorate passes through the limestone rocks remains from the marine environment during the Eocene Epoch 60 million years ago; this is why the vicinity is full of fossils.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">The valley around the high rocks has a group of animals including mammals and if you are lucky you will pass by some of them during your tour.&nbsp; Visiting Wadi Degla Protectorate as part of your vacation in Cairo is special in all ways!&nbsp; It offers a unique experience where you will enjoy the silence of nature and the beauty of rocks.</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;"><img src="../../../../uploads/0000/1/2019/12/12/azhar-150.jpg" alt="" width="150" height="87" />&nbsp; &nbsp;<strong><span style="font-size: 14.0pt; line-height: 150%;">Al-Azhar Park</span></strong></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed;">It is tricky to imagine how the location of today's Al-Azhar park was once a mountain of debris!<span style="mso-spacerun: yes;">&nbsp; </span>A tremendous effort was done by Aga Khan Trust for Culture Network aiming at creating a great public space in the heart of Cairo.<span style="mso-spacerun: yes;">&nbsp; </span>A total of 30 million dollars was assigned to this project.<span style="mso-spacerun: yes;">&nbsp; </span>Qualified local architects and urban development offices participated in inventing this amazing transformation.<span style="mso-spacerun: yes;">&nbsp; </span>Make sure to take some time and dine in one of the nice restaurants with the astonishing view of Cairo and Saladin Citadel just in front of you!</p>
+</body>
+</html>
+
+            
+            <div class="row">
+    
+    <div class="col-lg-9 col-md-12">
+        <div class="bravo-list-item">
+            <div class="topbar-search">
+                <div class="text">
+                    8 Hotel found
+                </div>
+                <div class="control">
+
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="row">
+                                                                        <div class="col-lg-4 col-md-6">
+                                <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  target="_blank"  href="http://cvc.vacations/hotel/marriott-mena-house">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/mena-house-5-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  target="_blank"  href="http://cvc.vacations/hotel/marriott-mena-house">
+            Marriott Mena House
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                            </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  target="_blank"  href="http://cvc.vacations/hotel/the-nile-ritz-carlton">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/33nr-nileritz-1-1024x480-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  target="_blank"  href="http://cvc.vacations/hotel/the-nile-ritz-carlton">
+            The Nile Ritz-Carlton
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                            </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  target="_blank"  href="http://cvc.vacations/hotel/le-meridien-pyramids-hotel-spa-cairo">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/le-meridien-pyramids-1-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  target="_blank"  href="http://cvc.vacations/hotel/le-meridien-pyramids-hotel-spa-cairo">
+            Le Méridien Pyramids Hotel &amp; Spa Cairo
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                            </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  target="_blank"  href="http://cvc.vacations/hotel/kempinski-nile-hotel-cairo">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/kempiniski-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  target="_blank"  href="http://cvc.vacations/hotel/kempinski-nile-hotel-cairo">
+            Kempinski Nile Hotel Cairo
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                            </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  target="_blank"  href="http://cvc.vacations/hotel/hilton-cairo-zamalek-residence">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/hilton-zmalek-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  target="_blank"  href="http://cvc.vacations/hotel/hilton-cairo-zamalek-residence">
+            Hilton Cairo Zamalek Residence
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                            </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  target="_blank"  href="http://cvc.vacations/hotel/jw-marriott-hotel-cairo">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/caijw.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  target="_blank"  href="http://cvc.vacations/hotel/jw-marriott-hotel-cairo">
+            JW Marriott Hotel Cairo
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                            </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  target="_blank"  href="http://cvc.vacations/hotel/four-season-first-residence">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/59294-1201041931005534815-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  target="_blank"  href="http://cvc.vacations/hotel/four-season-first-residence">
+            Four Season First Residence
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                            </div>
+                                                    <div class="col-lg-4 col-md-6">
+                                <div class="item-tour ">
+        <div class="thumb-image ">
+                <a  target="_blank"  href="http://cvc.vacations/hotel/four-season-nile-plaza-cairo">
+            
+            <img class='img-responsive lazy'  data-src=http://cvc.vacations/uploads/0000/1/2019/12/28/1336750-four-seasons-nile-plaza-cairo-600.jpg  alt=''>
+        </a>
+    </div>
+    <div class="location">
+                    <i class="icofont-paper-plane"></i>
+            Cairo
+            </div>
+    <div class="item-title">
+        <a  target="_blank"  href="http://cvc.vacations/hotel/four-season-nile-plaza-cairo">
+            Four Season at Cairo Nile Plaza
+        </a>
+    </div>
+        <div class="service-review tour-review">
+        <div class="list-star">
+            <ul class="booking-item-rating-stars">
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <div class="booking-item-rating-stars-active" style="">
+                <ul class="booking-item-rating-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+                            </div>
+                                                            </div>
+            </div>
+            <div class="bravo-pagination">
+                
+                                    <span class="count-string">Showing 1 - 8 of 8 Hotel</span>
+                            </div>
+        </div>
+    </div>
+</div> 
+        </div>
+    </div>
+        <div class="bravo_footer">
+    <div class="mailchimp">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <div class="col-xs-12  col-md-7 col-lg-6">
+                            <div class="media ">
+                                <div class="media-left hidden-xs">
+                                    <i class="icofont-hill"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Get Updates &amp; More</h4>
+                                    <p>Thoughtful thoughts to your inbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-5 col-lg-6">
+                            <form action="http://cvc.vacations/newsletter/subscribe" class="subcribe-form bravo-subscribe-form bravo-form">
+                                <input type="hidden" name="_token" value="rpIsegRg9AWQquQ8f0S0UzRjdI51mdPWVAwziRyx">                                <div class="form-group">
+                                    <input type="text" name="email" class="form-control email-input" placeholder="Your Email">
+                                    <button type="submit" class="btn-submit">Subscribe
+                                        <i class="fa fa-spinner fa-pulse fa-fw"></i>
+                                    </button>
+                                </div>
+                                <div class="form-mess"></div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+                                                                                <div class="col-lg-4 col-md-6">
+                            <div class="nav-footer">
+                                <div class="title">
+                                    NEED HELP?
+                                </div>
+                                <div class="context">
+                                    <div class="contact">
+        <div class="c-title">
+            Call Us
+        </div>
+        <div class="sub">
+            + 02 012 21 23 25 04
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Email for Us
+        </div>
+        <div class="sub">
+            info@cvc.vacations
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Follow Us
+        </div>
+        <div class="sub">
+            <a href="#">
+                <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/12/ico_facebook_footer.png">
+            </a>
+            <a href="#">
+                <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/12/ico_twitter_footer.png">
+            </a>
+            <a href="#">
+                <img src="https://travelhotel.wpengine.com/wp-content/uploads/2018/12/ico_instagram_footer.png">
+            </a>
+        </div>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-lg-4 col-md-6">
+                            <div class="nav-footer">
+                                <div class="title">
+                                    Services
+                                </div>
+                                <div class="context">
+                                    <div class="contact">
+        <div class="c-title">
+            Call Us
+        </div>
+        <div class="sub">
+            + 02 22 68 24 28
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Skype
+        </div>
+        <div class="sub">
+            Egyptws
+        </div>
+    </div>
+    <div class="contact">
+        <div class="c-title">
+            Whats App
+        </div>
+        <div class="sub">
+           + 02 012 21 23 25 04
+        </div>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-lg-4 col-md-6">
+                            <div class="nav-footer">
+                                <div class="title">
+                                    SUPPORT
+                                </div>
+                                <div class="context">
+                                    <ul>
+    
+    <li><a href="https://cvc.vacations/">Home</a></li>
+    <li><a href="#">Destinations</a></li>
+    <li><a href="https://cvc.vacations/tour">Egypt Packages</a></li>
+<li><a href="https://cvc.vacations/page/about-us">About Us</a></li>
+    <li><a href="https://cvc.vacations/contact">Contact Us</a></li>
+    <li><a href="https://cvc.vacations/news">Blog</a></li>
+</ul>
+                                </div>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container context">
+            <div class="row">
+                <div class="col-md-12">
+                    <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Copyright &copy; 2019 by Tech Center</p>
+</body>
+</html>
+                    <div class="f-visa">
+                        <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Cadence Vacations Center</p>
+</body>
+</html>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="libs/lazy-load/intersection-observer.js"></script>
+<script async src="libs/lazy-load/lazyload.min.js"></script>
+<script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {
+        elements_selector: ".lazy",
+        // ... more custom settings?
+    };
+
+    // Listen to the initialization event and get the instance of LazyLoad
+    window.addEventListener('LazyLoad::Initialized', function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+    }, false);
+
+
+</script>
+<script src="libs/jquery-3.3.1.min.js"></script>
+<script src="libs/vue/vue.js"></script>
+<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="module/media/js/browser.js"></script>
+<script src="libs/carousel-2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="libs/daterange/moment.min.js"></script>
+<script type="text/javascript" src="libs/daterange/daterangepicker.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/home.js"></script>
+
+    <script type="text/javascript" src="libs/ion_rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="module/tour/js/tour.js"></script>
+    </div>
+</body>
+</html>
